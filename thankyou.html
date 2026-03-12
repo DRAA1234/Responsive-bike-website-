@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Successful</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    .success-box {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      width: 350px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    }
+
+    .success-box h1 {
+      color: #00ffcc;
+      margin-bottom: 15px;
+    }
+
+    .success-box p {
+      font-size: 16px;
+      margin-bottom: 25px;
+      color: #ccc;
+    }
+
+    .success-box button {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      background: #00ffcc;
+      color: #000;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .success-box button:hover {
+      background: #00ccaa;
+    }
+
+    .check-icon {
+      font-size: 60px;
+      color: #00ffcc;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="success-box">
+    <div class="check-icon">✔</div>
+    <h1>Registration Complete</h1>
+    <p>Your registration  has been successfully Completed.</p>
+    <button onclick="goLogin()">Go to Login</button>
+  </div>
+
+  <script>
+    function goLogin() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>

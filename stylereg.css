@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Boby list*/
+body {
+    font-family: Arial;
+    height: 100%;
+    background-image: url(img/b1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/*form list*/
+form .h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.register-box{
+    margin-right: 50px;
+    margin-top: 100px 
+    
+    border-radius 15px;
+    padding: 100px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    color: rgb(117, 47, 47);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.register-box form {
+    width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15); /* transparent */
+    backdrop-filter: blur(10px); /* glass effect */
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    color: rgb(12, 2, 2);
+}
+form .form-group{
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.register-box form label {
+    display: block;
+    margin-top: 20px;
+    font-family: "Snap ITC", cursive,sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 800;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: capitalize  
+}
+
+.register-box input, textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+
+    font-family: "Comic Sans MS", cursive,sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 800;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: capitalize;
+
+    margin-bottom: 15px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: rgb(250, 247, 247);
+    outline: none;
+}
+
+.register-box button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 8px;
+    background: green;
+    color: white;
+    border: none;
+   
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-box span {
+    color: red;
+    font-size: 12px;
+}
+.register-box select{
+    
+    padding: 6px;
+    margin-top: 5px;
+
+    font-family: "Comic Sans MS", cursive,sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    font-weight: 800;
+    text-decoration: none;
+    font-style: italic;
+    font-variant: normal;
+    text-transform: capitalize;
+
+    margin-bottom: 15px; 
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(87, 68, 68);
+    color: rgba(2, 7, 6, 0.89);
+    outline: none;
+}
+
+.texts{
+    text-align: center;
+    color: aqua;
+}
+
+
+
+/* Transparent registration box */
+/*.register-box {
+    
+/*width: 250px;
+height: 200px;
+padding: 100px;
+backdrop-filter: blur(10px);
+background: rgba(255, 255, 255, 0.15); /* transparent */
+ /* glass effect */
+
+/* 
+border-radius: 15px;
+padding: 100px;
+box-shadow: 0 0 25px rgba(0,0,0,0.4);
+color: rgb(117, 47, 47);
+justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+}
+/* Title */
+/*
+.register-box h2 {
+text-align: center;
+margin-bottom: 25px;
+}
+/* Inputs */
+/*
+.register-box input {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+background: transparent;
+border: none;
+border-bottom: 1px solid white;
+color: white;
+outline: none;
+}
+/* Button */
+/*
+.register-box button {
+width: 100%;
+padding: 10px;
+border: none;
+border-radius: 20px;
+background: rgb(19, 14, 14);
+font-weight: bold;
+cursor: pointer;
+}
+.register-box button:hover {
+background: #58a2a5;
+}
+/* Text */
+/*
+.register-box p {
+text-align: center;
+margin-top: 15px;
+font-size: 13px;
+}
+.register-box a {
+color: #ffccff;
+text-decoration: none;
+}
+
+.bike{
+    color: #58a2a5;
+    font-family: "Comic Sans MS", cursive,sans-serif;
+font-size: 15px;
+letter-spacing: 2px;
+word-spacing: 2px;
+font-weight: 800;
+text-decoration: none;
+font-style: italic;
+font-variant: normal;
+text-transform: capitalize;
+
+margin-bottom: 15px;
+background: transparent;
+border: none;
+border-bottom: 1px solid rgb(30, 245, 11);
+color: rgb(230, 8, 8);
+outline: none;
+}
+*/

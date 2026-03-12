@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="stylereg.css">
+</head>
+<body>
+
+<div class="register-box">
+    <form action="thankyou.html" onsubmit="return validateForm()">
+        <h2>Bike Registration Form</h2>
+    <div class="form-group name">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter Your Name">
+        <span id="nameError"></span>
+    </div>
+    
+    <div class="form-group gmail">
+        <label>Email</label>
+        <input type="text" id="email" placeholder="Enter Your Gmail Id">
+        <span id="emailError"></span>
+    </div>
+
+    <div class="form-group phone">
+        <label>Phone</label>
+        <input type="text" id="phone" placeholder="Enter Your Phone ">
+        <span id="phoneError"></span>
+    </div>
+
+    <div class="form-group address">
+        <label>Address</label>
+        <textarea id="address" placeholder="Enter Your Address"></textarea>
+        <span id="addressError"></span>
+    </div>
+
+    <div class="form-group bike">
+        <label>Bike Model</label>
+    <select id="bike">
+        <option value="">--Select Bike Model---</option>
+        <option value="Hero">Hero</option>
+        <option value="R15">R15</option>
+        <option value="v2">v2</option>
+        <option value="NOP">NOP</option>
+    </select>
+    <span id="bikeError"></span>
+    </div>
+    
+    <div class="form-group">
+        <button type="submit">Submit</button>
+    </div>
+    
+
+   </form>
+</div>
+
+
+<script src="scriptreg.js"></script>
+</body>
+</html>

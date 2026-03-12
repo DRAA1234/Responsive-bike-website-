@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap Script-->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+     <!--fonts awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!--js-->
+    <link rel="stylesheet" href="index.js">   
+    <!--CSS-->  
+    <link rel="stylesheet" href="index.css">
+    
+    <title>ALBERT | Presenting India Ka Bike | India's Fastest Bike Ever</title>
+</head>
+<body>
+<!--Home-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark light fixed-top ">
+        <div class="container">
+            <i class="fa-solid fa-motorcycle fa-rotate-by" style="color: #e2e5e9; --fa-rotate-angle: -10deg;"></i>
+            <a class="navbar-brand" href="#">ALBERT</a>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--Navbar-->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+                <ul class="navbar-nav " >
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class=" nav-item">
+                        <a class="nav-link" href="#testimonials">Features
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shop">Shop
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexreg.html">Register
+                            <span class="sr-only">(current)</span>
+                        </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section>
+            
+            <div class="wellcome">
+                <!--Search function-->
+                <div class="container">
+                </div>
+                
+                <marquee class="blink"  behavior="" direction="scroll">
+                <!--Time and Date Update-->    
+                <div id="time"></div>
+                <script>
+                    function updateTime() {
+                    const date = new Date();
+                    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                    const time = date.toLocaleTimeString();
+                    const day = date.toLocaleDateString(undefined, options);
+                    document.getElementById('time').innerHTML =`Today is: ${day}, Current Time: ${time}`;
+                }
+                setInterval(updateTime, 1000);
+                updateTime();
+                </script>
+                </marquee>
+
+                <div class="secbox">
+                    <button class="btn-search"><i class="fas fa-search"></i></button>
+                    <input type="text"class="input-search" placeholder="Search..">
+                </div>
+                <div class="wellcomeMsg">
+                    <div class="headTag">ALBERT STORE ROOM</div>
+                    <div class="subTag">
+                        <marquee behavior="" direction="scroll">
+                        “Just like my favorite ride, being around you is pure freedom.”
+                    </marquee>
+                </div>
+                </div>
+            </div>
+        </section>
+<!--Features-->
+        <section id="testimonials">
+            <div class="container">
+                <div class="sectionHead">Features</div>
+                        <hr>
+                        <br>
+                <div class="row">
+                    <div class="col-md-10">
+                    </div>
+                    <div id="testimonial-carousel" class="carousel slide"  data-ride="false">
+                       <div class="carousel-inner">
+                         <div class="carousel-item active" style="padding-top: 20px;">
+                           <i class="fa fa-wrench" aria-hidden="true"></i>
+                           <em>Hero Splendor</em>
+                           <p>The Hero Splendor Plus Xtec features a digital instrument cluster with Bluetooth connectivity, real-time mileage indicator, and call/SMS alerts. It also comes with an i3S technology for better fuel efficiency and a stylish design  
+                           </p>
+                           <div >
+                               <img id="image" src="./img/hs1.jpg" alt="repair">
+                               <img id="image" src="./img/hs2.jpg" alt="repair">
+                            </div>
+                       </div>
+                         <div class="carousel-item ">
+                           <i class="fa fa-clock-o" aria-hidden="true"></i>
+                           <em>Yamaha MT</em>
+                           <p>The Yamaha MT 15 V2 is powered by 155cc BS6 engine which develops a power of 18.1 bhp and a torque of 14.1 Nm. With both front and rear disc brakes, Yamaha MT 15 V2 comes up with anti-locking braking system. This MT 15 V2 bike weighs 141 kg and has a fuel tank capacity of 10 liters.
+                           </p>
+                           <div >
+                           <img id="image" src="./img/mts1.jpg" alt="repair">
+                           <img id="image" src="./img/mts2.jpg" alt="repair">
+                        </div>
+                         </div>
+                         <div class="carousel-item ">
+                           <i class="fa fa-cog" aria-hidden="true"></i>
+                           <em>Yamaha R15</em>
+                           <p>The Yamaha R15 V4 is powered by a 155 cc air-cooled engine which produces 18.4 PS @ 10000 rpm of power. It has a fuel tank of 11 L and a claimed mileage of 45 kmpl. The Yamaha R15 V4 starts at Rs 1.84 and goes up to Rs 2.11 Lakh (ex-showroom, Delhi). It is available in six variants
+                           </p>
+                           <div >
+                            <img id="image" src="./img/r151.jpg" alt="repair">
+                           <img  id="image"src="./img/r152.jpg"alt="repair">
+                           </div>
+                         </div>
+                       <div class="carousel-item ">
+                           <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                           <em>Apache</em>
+                           <p> System administrators might use Apache because of its longevity, free price tag, cross-platform nature, and the fact that it works on both Linux-based and Windows servers. It is also customizable due to its open source code and structure
+                           </p>
+                           <div>
+                            <img id="image" src="./img/tvsap1.avif" alt="repair">
+                           <img id="image"src="./img/tvsap2.avif"alt="repair">
+                           </div> 
+                         </div>
+                       </div>
+                       <a class="carousel-control-prev" role="button" href="#testimonial-carousel" data-slide="prev" >
+                         <span class="carousel-control-prev-icon" style="color: black;"></span>
+                       </a>
+                       <a class="carousel-control-next" role="button" href="#testimonial-carousel" data-slide="next">
+                         <span class="carousel-control-next-icon"></span>
+                       </a>
+                     </div>
+                   </div>  
+                </div>
+            </div>
+        </section>
+        
+        <section class="parallex-section">
+            <div class="parallex" id="parallex-set-1"></div>
+        </section>
+<!--Shop-->
+        <section id="shop">
+            <div class="container">
+                <div class="sectionHead">Shop</div>
+                <hr>
+                <br>
+                
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="item-box">
+                            <div class="item-box-img">
+                                <img src="./img/bike1.jpg" alt="shop">
+                            </div>
+                            <div class="item-box-head">Bikes</div>
+                            <div class="item-box-sub-text">A bike, short for bicycle, is a human-powered vehicle with two wheels.</div>
+                            <button class="btn item-box-btn"><a href="bikelist.html">Shop Now</a></button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item-box">
+                            <div class="item-box-img">
+                                <img src="./img/h1.jpg" alt="shop">
+                            </div>
+                            <div class="item-box-head">Helmets</div>
+                            <div class="item-box-sub-text">A helmet is a protective headgear designed to reduce the risk of head injuries during various activities.</div>
+                            <button class="btn item-box-btn">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item-box">
+                            <div class="item-box-img">
+                                <img src="./img/bike2.jpg" alt="shop">
+                            </div>
+                            <div class="item-box-head">Tool Kit</div>
+                            <div class="item-box-sub-text">
+                                Bike tools help you fix small problems while you're riding</div>
+                            <button class="btn item-box-btn">Shop Now</button>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="item-box">
+                            <div class="item-box-img">
+                                <img src="./img/c1.jpg" alt="shop">
+                            </div>
+                            <div class="item-box-head">Cloths</div>
+                            <div class="item-box-sub-text">Cloths are fabric materials used mainly for making clothes but also for household items.</div>
+                            <button class="btn item-box-btn">Shop Now</button>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="sectionSubHead">Newly Arrived</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/bwm.jpg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    BMW G310 ₹3.05 lakhs/-
+                                    <span style="color:rgb(173, 11, 11)">(39% off)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/r15.jpeg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    R15 V3 ₹1.53 lakhs/-
+                                    <span style="color:rgb(173, 11, 11)">(27% off)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/RR.jpg" alt="bike" height="50%">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    RR TVS ₹2.88 lakhs/-
+                                    <span style="color:rgb(173, 11, 11)">(34% off)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/mt1.jpg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    MT ₹1.46 lakhs/-
+                                    
+                                    <span style="color:rgb(173, 11, 11)">(45% off)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/tvs.jpg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                    TVS Apache₹90,038/-
+                                    <span style="color:rgb(173, 11, 11)">(17% off)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/hero.jpg" alt="bike">
+                            <div class="card-footer">
+                                <p class="card-text">
+                                Hero Splendor ₹75,000/-
+                                    <span style="color:rgb(173, 11, 11)">(21% off)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="parallex-section">
+            <div class="parallex" id="parallex-set-3"></div>
+        </section>
+<!--About-->
+        <section id="about">
+            <div class="container">
+                <div class="sectionHead">About Us</div>
+                <hr>
+                <br>
+                <p class="para" >
+                    Albert Bike Store Room is a haven for cycling enthusiasts, offering a diverse range of bicycles, accessories, and spare parts to meet every rider's needs. 
+                    Located in a bustling part of town, Albert's store provides easy access and ample space for browsing. 
+                    The store room is meticulously organized with high-quality shelving and display units, ensuring that customers can easily find what they are looking for. 
+                    From sleek road bikes and rugged mountain bikes to comfortable hybrids and stylish cruisers, Albert's selection caters to all types of cyclists. 
+                    Additionally, the store features a dedicated workshop area where skilled technicians provide expert repairs and maintenance services, ensuring that every bike is in top-notch condition.
+                <p class="para">
+                    Customer satisfaction is at the heart of Albert's Bike Store Room. 
+                    The knowledgeable and friendly staff are always ready to assist customers with personalized recommendations and advice. 
+                    To foster a sense of community, Albert's regularly hosts events such as bike maintenance workshops, group rides, and cycling safety seminars. 
+                    The store's strong online presence, with an easy-to-navigate website and active social media engagement, keeps customers informed about the latest products and special offers. 
+                    By combining a wide range of high-quality products with exceptional service, Albert's Bike Store Room has established itself as a trusted destination for cyclists in the area.
+                </p>
+                </p>
+            </div>
+        </section>
+
+        <section class="parallex-section">
+            <div class="parallex" id="parallex-set-2"></div>
+        </section>
+
+<!--contact-->
+        <section id="contact">
+            <div class="container">
+                <div class="sectionHead">Contact Us</div>
+                <hr>
+                <br>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-6 offset-md-2">
+                                <h4 class="sectionSubSubHead text-capitalize">Send A message</h4>
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required placeholder="Name*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" required placeholder="Email*">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" required placeholder="Phone*">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea type="text" class="form-control" required placeholder="Message*"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <button class="btn btn-info" type="submit">Send</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4 class="sectionSubSubHead">Mail Us</h4>
+                        <ul class="list-unstyled">
+                            <li>Albert Pvt. Ltd.</li>
+                            <li>Marthadam, Munchirai</li>
+                            <li>Kanyakumari, India</li>
+                            <li>Pin: 629171</li>
+                            <li>Phone: +91 9487449159</li>
+                            <li>Email: 4301albert@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <section id="footer">
+        <div>
+        <i class="social-icon fa-brands fa-square-facebook"></i>
+        <i class="social-icon fa-brands fa-twitter"></i>
+        <i class="social-icon fa-brands fa-instagram"></i>
+        <i class="social-icon fa-brands fa-mailchimp"></i>
+        <p>Copyright © 2017-18 Albert Pvt. Ltd.</p>
+    </div>
+    </section>
+</body>
+</html>
